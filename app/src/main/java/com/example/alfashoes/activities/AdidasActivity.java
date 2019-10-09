@@ -9,6 +9,7 @@ import android.view.View;
 import com.example.alfashoes.MainActivity;
 import com.example.alfashoes.R;
 import com.example.alfashoes.activitiesAdidas.Adidas1Activity;
+import com.example.alfashoes.activitiesAdidas.Adidas2Activity;
 
 public class AdidasActivity extends AppCompatActivity {
 
@@ -25,6 +26,11 @@ public class AdidasActivity extends AppCompatActivity {
 
     public void ClickAdidas1(View view) {
         Intent intent = new Intent(this, Adidas1Activity.class);
+        startActivity(intent);
+    }
+
+    public void ClickAdidas2(View view) {
+        Intent intent = new Intent(this, Adidas2Activity.class);
         startActivity(intent);
     }
 }
