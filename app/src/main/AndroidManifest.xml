@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.HomeActivity"></activity>
+        <activity android:name=".activitiesAdidas.Adidas1Activity"></activity>
+        <activity android:name=".activities.VansActivity" />
+        <activity android:name=".activities.NikeActivity" />
+        <activity android:name=".activities.AdidasActivity" />
+        <activity android:name=".activities.HomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
