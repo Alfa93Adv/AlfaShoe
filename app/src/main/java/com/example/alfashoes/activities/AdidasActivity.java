@@ -16,7 +16,6 @@ import com.example.alfashoes.activitiesAdidas.Adidas5Activity;
 import com.example.alfashoes.activitiesAdidas.Adidas6Activity;
 import com.example.alfashoes.activitiesAdidas.Adidas7Activity;
 import com.example.alfashoes.activitiesAdidas.Adidas8Activity;
-import com.example.alfashoes.activitiesAdidas.Adidas9Activity;
 
 public class AdidasActivity extends AppCompatActivity {
 
@@ -67,11 +66,6 @@ public class AdidasActivity extends AppCompatActivity {
     }
     public void ClickAdidas8(View view) {
         Intent intent = new Intent(this, Adidas8Activity.class);
-        startActivity(intent);
-    }
-
-    public void ClickAdidas9(View view) {
-        Intent intent = new Intent(this, Adidas9Activity.class);
         startActivity(intent);
     }
 }

@@ -36,4 +36,8 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, VansActivity.class);
         startActivity(intent);
     }
+
+    public void ClickExit(View view) {
+
+    }
 }
