@@ -89,7 +89,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline14" />
+        app:layout_constraintTop_toTopOf="@+id/guideline14"
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline14"
@@ -111,33 +112,59 @@
         app:layout_constraintTop_toTopOf="@+id/guideline13" />
 
     <RadioGroup
-        android:layout_width="201dp"
-        android:layout_height="97dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_beli"
+        android:layout_width="141dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline14"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14">
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.120000005">
 
         <RadioButton
             android:id="@+id/uk1"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="41"
-            android:textSize="10sp" />
+            android:textSize="8sp" />
 
         <RadioButton
             android:id="@+id/uk2"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="42"
-            android:textSize="10sp" />
+            android:textSize="8sp" />
 
         <RadioButton
             android:id="@+id/uk3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
             android:text="43"
-            android:textSize="10sp" />
+            android:textSize="8sp" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Pilih Ukuran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline13" />
+
+    <FrameLayout
+        android:id="@+id/adidas1_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

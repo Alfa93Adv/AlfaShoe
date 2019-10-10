@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activitiesNike.Nike1Activity"></activity>
+        <activity android:name=".activitiesAdidas.Adidas8Activity"></activity>
+        <activity android:name=".activitiesAdidas.Adidas9Activity" />
+        <activity android:name=".activitiesAdidas.Adidas7Activity" />
+        <activity android:name=".activitiesAdidas.Adidas6Activity" />
+        <activity android:name=".activitiesAdidas.Adidas5Activity" />
+        <activity android:name=".activitiesAdidas.Adidas4Activity" />
+        <activity android:name=".activitiesAdidas.Adidas3Activity" />
+        <activity android:name=".activitiesNike.Nike1Activity" />
         <activity android:name=".activitiesAdidas.Adidas2Activity" />
         <activity android:name=".activitiesAdidas.Adidas1Activity" />
         <activity android:name=".activities.VansActivity" />

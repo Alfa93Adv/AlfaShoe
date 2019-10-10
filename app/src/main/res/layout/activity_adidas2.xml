@@ -82,4 +82,13 @@
         app:layout_constraintStart_toEndOf="@+id/text_pblack"
         app:layout_constraintTop_toTopOf="@+id/guideline17"
         android:onClick="ClickPsilver"/>
+
+    <FrameLayout
+        android:id="@+id/adidas2_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="273dp">
+
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

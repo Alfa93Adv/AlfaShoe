@@ -10,6 +10,13 @@ import com.example.alfashoes.MainActivity;
 import com.example.alfashoes.R;
 import com.example.alfashoes.activitiesAdidas.Adidas1Activity;
 import com.example.alfashoes.activitiesAdidas.Adidas2Activity;
+import com.example.alfashoes.activitiesAdidas.Adidas3Activity;
+import com.example.alfashoes.activitiesAdidas.Adidas4Activity;
+import com.example.alfashoes.activitiesAdidas.Adidas5Activity;
+import com.example.alfashoes.activitiesAdidas.Adidas6Activity;
+import com.example.alfashoes.activitiesAdidas.Adidas7Activity;
+import com.example.alfashoes.activitiesAdidas.Adidas8Activity;
+import com.example.alfashoes.activitiesAdidas.Adidas9Activity;
 
 public class AdidasActivity extends AppCompatActivity {
 
@@ -31,6 +38,40 @@ public class AdidasActivity extends AppCompatActivity {
 
     public void ClickAdidas2(View view) {
         Intent intent = new Intent(this, Adidas2Activity.class);
+        startActivity(intent);
+    }
+
+    public void ClickAdidas3(View view) {
+        Intent intent = new Intent(this, Adidas3Activity.class);
+        startActivity(intent);
+    }
+
+    public void ClickAdidas4(View view) {
+        Intent intent = new Intent(this, Adidas4Activity.class);
+        startActivity(intent);
+    }
+
+    public void ClickAdidas5(View view) {
+        Intent intent = new Intent(this, Adidas5Activity.class);
+        startActivity(intent);
+    }
+
+    public void ClickAdidas6(View view) {
+        Intent intent = new Intent(this, Adidas6Activity.class);
+        startActivity(intent);
+    }
+
+    public void ClickAdidas7(View view) {
+        Intent intent = new Intent(this, Adidas7Activity.class);
+        startActivity(intent);
+    }
+    public void ClickAdidas8(View view) {
+        Intent intent = new Intent(this, Adidas8Activity.class);
+        startActivity(intent);
+    }
+
+    public void ClickAdidas9(View view) {
+        Intent intent = new Intent(this, Adidas9Activity.class);
         startActivity(intent);
     }
 }

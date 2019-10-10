@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.alfashoes.FragmentsAdidas.BlackPodFragment;
 import com.example.alfashoes.FragmentsAdidas.BlackQuesterFragment;
 import com.example.alfashoes.FragmentsAdidas.SilverPodFragment;
 import com.example.alfashoes.FragmentsAdidas.SilverQuesterFragment;
@@ -29,12 +30,12 @@ public class Adidas2Activity extends AppCompatActivity {
     public void ClickPsilver(View view) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 
-        SilverPodFragment silverQuesterFragment= (SilverPodFragment) getSupportFragmentManager().findFragmentByTag("SILVER_QUESTER_FRAGMENTS");
-        if(silverQuesterFragment != null && silverQuesterFragment.isVisible()){
+        SilverPodFragment silverPodFragment= (SilverPodFragment) getSupportFragmentManager().findFragmentByTag("SILVER_POD_FRAGMENTS");
+        if(silverPodFragment != null && silverPodFragment.isVisible()){
             fragmentTransaction.commit();
         }else {
             fragmentTransaction.setCustomAnimations(R.anim.exit_from_right, R.anim.exit_from_left);
-            fragmentTransaction.replace(R.id.adidas2_placeholder, new SilverPodFragment(), "SILVER_QUESTER_FRAGMENTS");
+            fragmentTransaction.replace(R.id.adidas2_placeholder, new SilverPodFragment(), "SILVER_POD_FRAGMENTS");
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
@@ -43,12 +44,12 @@ public class Adidas2Activity extends AppCompatActivity {
     public void ClickPblack(View view) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 
-        BlackQuesterFragment blackQuesterFragment = (BlackQuesterFragment) getSupportFragmentManager().findFragmentByTag("SILVER_QUESTER_FRAGMENTS");
-        if(blackQuesterFragment != null && blackQuesterFragment.isVisible()){
+        BlackPodFragment blackPodFragment = (BlackPodFragment) getSupportFragmentManager().findFragmentByTag("SILVER_POD_FRAGMENTS");
+        if(blackPodFragment != null && blackPodFragment.isVisible()){
             fragmentTransaction.commit();
         }else {
             fragmentTransaction.setCustomAnimations(R.anim.exit_from_right, R.anim.exit_from_left);
-            fragmentTransaction.replace(R.id.adidas2_placeholder, new BlackQuesterFragment(), "SILVER_QUESTER_FRAGMENTS");
+            fragmentTransaction.replace(R.id.adidas2_placeholder, new BlackPodFragment(), "SILVER_POD_FRAGMENTS");
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
