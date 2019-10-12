@@ -23,11 +23,6 @@ public class Adidas1Activity extends AppCompatActivity {
         setContentView(R.layout.activity_adidas1);
     }
 
-    public void ClickMain(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
     public void ClickQblack(View view) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 

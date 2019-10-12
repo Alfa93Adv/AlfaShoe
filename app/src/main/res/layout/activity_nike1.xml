@@ -94,7 +94,7 @@
         android:id="@+id/button2"
         android:layout_width="57dp"
         android:layout_height="38dp"
-        android:onClick="ClickBackAdidas"
+        android:onClick="ClickBackNike"
         android:text="back"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"

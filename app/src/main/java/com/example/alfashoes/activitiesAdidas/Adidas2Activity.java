@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.example.alfashoes.FragmentsAdidas.BlackPodFragment;
 import com.example.alfashoes.FragmentsAdidas.BlackQuesterFragment;
+import com.example.alfashoes.FragmentsAdidas.BluePodFragment;
 import com.example.alfashoes.FragmentsAdidas.SilverPodFragment;
 import com.example.alfashoes.FragmentsAdidas.SilverQuesterFragment;
 import com.example.alfashoes.MainActivity;
@@ -50,6 +51,20 @@ public class Adidas2Activity extends AppCompatActivity {
         }else {
             fragmentTransaction.setCustomAnimations(R.anim.exit_from_right, R.anim.exit_from_left);
             fragmentTransaction.replace(R.id.adidas2_placeholder, new BlackPodFragment(), "SILVER_POD_FRAGMENTS");
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
+    }
+
+    public void ClickPBlue(View view) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
+        BluePodFragment bluePodFragment = (BluePodFragment) getSupportFragmentManager().findFragmentByTag("SILVER_POD_FRAGMENTS");
+        if( bluePodFragment != null &&  bluePodFragment.isVisible()){
+            fragmentTransaction.commit();
+        }else {
+            fragmentTransaction.setCustomAnimations(R.anim.exit_from_right, R.anim.exit_from_left);
+            fragmentTransaction.replace(R.id.adidas2_placeholder, new BluePodFragment(), "SILVER_POD_FRAGMENTS");
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }

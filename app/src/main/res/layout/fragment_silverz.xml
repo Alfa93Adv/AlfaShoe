@@ -2,25 +2,28 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout4"
+    android:id="@+id/frameLayout23"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentsAdidas.BlackPodFragment">
+    tools:context=".FragmentsAdidas.SilverzFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline20"
+        android:id="@+id/guideline23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="190dp" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="403dp"
-        android:layout_height="240dp"
-        android:src="@drawable/adidasp2"
-        app:layout_constraintBottom_toTopOf="@+id/guideline20"
+        android:id="@+id/imageView6"
+        android:layout_width="236dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/adidaszx2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline23"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

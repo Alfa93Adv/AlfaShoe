@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="52dp"
-        android:onClick="ClickQsilver"
+        android:onClick="ClickPsilver"
         android:text="Silver"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"
