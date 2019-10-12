@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activitiesVans.Vans2Activity"></activity>
+        <activity android:name=".activities.PembelianActivity"></activity>
+        <activity android:name=".activitiesVans.Vans2Activity" />
         <activity android:name=".activitiesVans.Vans1Activity" />
         <activity android:name=".activitiesNike.Nike8Activity" />
         <activity android:name=".activitiesNike.Nike7Activity" />

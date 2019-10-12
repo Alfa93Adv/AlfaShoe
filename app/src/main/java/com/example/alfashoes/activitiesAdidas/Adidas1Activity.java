@@ -12,6 +12,8 @@ import com.example.alfashoes.FragmentsAdidas.BlueQuesterFragment;
 import com.example.alfashoes.FragmentsAdidas.SilverQuesterFragment;
 import com.example.alfashoes.MainActivity;
 import com.example.alfashoes.R;
+import com.example.alfashoes.activities.AdidasActivity;
+import com.example.alfashoes.activities.PembelianActivity;
 
 public class Adidas1Activity extends AppCompatActivity {
 
@@ -66,5 +68,15 @@ public class Adidas1Activity extends AppCompatActivity {
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
+    }
+
+    public void ClickBackAdidas(View view) {
+        Intent intent = new Intent(this, AdidasActivity.class);
+        startActivity(intent);
+    }
+
+    public void ClickPembelian(View view) {
+        Intent intent = new Intent(this, PembelianActivity.class);
+        startActivity(intent);
     }
 }
