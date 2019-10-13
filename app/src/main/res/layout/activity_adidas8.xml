@@ -69,7 +69,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline14"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:onClick="ClickPembelian"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline14"

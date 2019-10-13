@@ -35,14 +35,14 @@ public class PembelianActivity extends AppCompatActivity {
     }
 
     public void ClickBeli(View view) {
-        String s = String.valueOf(sepatu);
-        if(s == sepatu){
-            Toast.makeText(this, "Terima Kasih", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, HomeActivity.class);
-            startActivity(intent);
-        }
-        else{
-            Toast.makeText(this, "Nama Sepatu yang anda masukkan salah", Toast.LENGTH_SHORT).show();
-        }
+//        String s = String.valueOf(sepatu);
+//        if(s == sepatu){
+//            Toast.makeText(this, "Terima Kasih", Toast.LENGTH_SHORT).show();
+//            Intent intent = new Intent(this, HomeActivity.class);
+//            startActivity(intent);
+//        }
+//        else{
+//            Toast.makeText(this, "Nama Sepatu yang anda masukkan salah", Toast.LENGTH_SHORT).show();
+//        }
     }
 }
