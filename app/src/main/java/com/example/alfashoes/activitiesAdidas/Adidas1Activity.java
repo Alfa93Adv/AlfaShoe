@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.alfashoes.FragmentsAdidas.BlackQuesterFragment;
 import com.example.alfashoes.FragmentsAdidas.BlueQuesterFragment;
@@ -17,10 +18,14 @@ import com.example.alfashoes.activities.PembelianActivity;
 
 public class Adidas1Activity extends AppCompatActivity {
 
+    public static final String ADIDAS = "Adidas Quester";
+    private TextView sepatu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adidas1);
+        sepatu = findViewById(R.id.textView14);
     }
 
     public void ClickQblack(View view) {
@@ -71,7 +76,9 @@ public class Adidas1Activity extends AppCompatActivity {
     }
 
     public void ClickPembelian(View view) {
+        String sepatu = this.sepatu.getText().toString();
         Intent intent = new Intent(this, PembelianActivity.class);
+        intent.putExtra(ADIDAS, sepatu);
         startActivity(intent);
     }
 }

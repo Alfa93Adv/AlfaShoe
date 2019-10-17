@@ -27,11 +27,6 @@ public class NikeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_nike);
     }
 
-    public void ClickMain(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
     public void ClickNike1(View view) {
         Intent intent = new Intent(this, Nike1Activity.class);
         startActivity(intent);

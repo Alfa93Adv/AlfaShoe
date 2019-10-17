@@ -25,11 +25,6 @@ public class AdidasActivity extends AppCompatActivity {
         setContentView(R.layout.activity_adidas);
     }
 
-    public void ClickMain(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
     public void ClickAdidas1(View view) {
         Intent intent = new Intent(this, Adidas1Activity.class);
         startActivity(intent);

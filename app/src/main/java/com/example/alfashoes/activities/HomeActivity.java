@@ -38,6 +38,6 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void ClickExit(View view) {
-
+        finish();
     }
 }

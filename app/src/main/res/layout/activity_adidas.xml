@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorBlue"
     tools:context=".activities.AdidasActivity">
 
     <LinearLayout
@@ -353,7 +354,6 @@
                     android:layout_marginTop="5dp"
                     android:text="Rp. 290.000"
                     android:textSize="10dp"/>
-
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

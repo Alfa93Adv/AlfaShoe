@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBlue"
     tools:context=".activities.NikeActivity">
 
     <LinearLayout
@@ -92,7 +93,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Rp. 345.000"
+                    android:text="Rp. 1.650.000"
                     android:textSize="10dp"/>
             </LinearLayout>
         </LinearLayout>
@@ -134,7 +135,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Rp. 769.000"
+                    android:text="Rp. 2.000.000"
                     android:textSize="10dp"/>
             </LinearLayout>
         </LinearLayout>
@@ -176,7 +177,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Rp. 769.000"
+                    android:text="Rp. 2.000.000"
                     android:textSize="10dp"/>
             </LinearLayout>
         </LinearLayout>
@@ -218,7 +219,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Rp. 600.000"
+                    android:text="Rp. 1.600.000"
                     android:textSize="10dp"/>
             </LinearLayout>
         </LinearLayout>
@@ -260,7 +261,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Rp. 600.000"
+                    android:text="Rp. 1.560.000"
                     android:textSize="10dp"/>
             </LinearLayout>
         </LinearLayout>
@@ -302,7 +303,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Rp. 600.000"
+                    android:text="Rp. 1.700.000"
                     android:textSize="10dp"/>
             </LinearLayout>
         </LinearLayout>
@@ -325,6 +326,7 @@
                     android:layout_height="140dp"
                     app:srcCompat="@drawable/nike8" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -338,14 +340,14 @@
                     android:layout_marginTop="5dp"
                     android:text="Nike Vapor Max Premier Flynit"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="Rp. 600.000"
-                    android:textSize="10dp"/>
+                    android:text="Rp. 2.900.000"
+                    android:textSize="10dp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
