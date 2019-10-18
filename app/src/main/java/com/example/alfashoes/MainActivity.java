@@ -22,11 +22,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,HomeActivity.class));
                 finish();
             }
-        },5000);
-    }
-
-    public void ClickOke(View view) {
-        Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
+        },2000);
     }
 }

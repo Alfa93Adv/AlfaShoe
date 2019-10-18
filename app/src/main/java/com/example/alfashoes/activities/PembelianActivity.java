@@ -35,6 +35,7 @@ public class PembelianActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pembelian);
         sepatu = findViewById(R.id.editText);
+
         radioWarna = findViewById(R.id.RadioGroup);
         radioUkuran = findViewById(R.id.RadioGroup);
         nama = findViewById(R.id.editNama);

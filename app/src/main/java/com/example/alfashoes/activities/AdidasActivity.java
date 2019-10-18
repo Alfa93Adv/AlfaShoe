@@ -1,11 +1,13 @@
 package com.example.alfashoes.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.alfashoes.FragmentsAdidas.BlackQuesterFragment;
 import com.example.alfashoes.MainActivity;
 import com.example.alfashoes.R;
 import com.example.alfashoes.activitiesAdidas.Adidas1Activity;

@@ -15,6 +15,7 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/adidas_placeholder"
             android:onClick="ClickAdidas1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
