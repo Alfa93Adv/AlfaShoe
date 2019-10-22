@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.example.alfashoes.FragmentsAdidas.BlackQuesterFragment;
 import com.example.alfashoes.MainActivity;
@@ -21,14 +22,22 @@ import com.example.alfashoes.activitiesAdidas.Adidas8Activity;
 
 public class AdidasActivity extends AppCompatActivity {
 
+    public static final String IMAGE = "image";
+    ImageView iv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adidas);
+        iv = findViewById(R.id.adidas1);
+//        iv.setImageResource(R.drawable.adidas1);
     }
 
     public void ClickAdidas1(View view) {
         Intent intent = new Intent(this, Adidas1Activity.class);
+        String img =  iv.getResources().toString();
+        System.out.println(";nuihiuh :   " +iv);
+        intent.putExtra(IMAGE, img);
         startActivity(intent);
     }
 

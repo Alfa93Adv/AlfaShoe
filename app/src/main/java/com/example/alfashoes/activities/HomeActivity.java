@@ -17,11 +17,6 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
     }
 
-    public void ClickMain(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
     public void ClickAdidas(View view) {
         Intent intent = new Intent(this, AdidasActivity.class);
         startActivity(intent);

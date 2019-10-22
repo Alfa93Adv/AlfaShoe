@@ -27,6 +27,18 @@ public class Adidas7Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adidas7);
         sepatu = findViewById(R.id.textView14);
+
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
+        BlackGazzeleFragment blackGazzeleFragment = (BlackGazzeleFragment) getSupportFragmentManager().findFragmentByTag("BLACK_GAZZELE_FRAGMENTS");
+        if(blackGazzeleFragment  != null && blackGazzeleFragment.isVisible()){
+            fragmentTransaction.commit();
+        }else {
+            fragmentTransaction.setCustomAnimations(R.anim.exit_from_right, R.anim.exit_from_left);
+            fragmentTransaction.replace(R.id.adidas7_placeholder, new BlackGazzeleFragment(), "BLACK_GAZZELE_FRAGMENTS");
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
     }
     public void ClickQblack(View view) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();

@@ -27,6 +27,18 @@ public class Adidas6Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adidas6);
         sepatu = findViewById(R.id.textView14);
+
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
+        BlackYeezyFragment blackYeezyFragment = (BlackYeezyFragment) getSupportFragmentManager().findFragmentByTag("BLACK_YEEZY_FRAGMENTS");
+        if(blackYeezyFragment  != null && blackYeezyFragment.isVisible()){
+            fragmentTransaction.commit();
+        }else {
+            fragmentTransaction.setCustomAnimations(R.anim.exit_from_right, R.anim.exit_from_left);
+            fragmentTransaction.replace(R.id.adidas6_placeholder, new BlackYeezyFragment(), "BLACK_YEEZY_FRAGMENTS");
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
     }
     public void ClickQblack(View view) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();

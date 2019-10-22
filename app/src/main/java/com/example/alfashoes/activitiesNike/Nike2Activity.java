@@ -27,6 +27,18 @@ public class Nike2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nike2);
         sepatu = findViewById(R.id.textView14);
+
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
+        BlackAirFragment blackAirFragment = (BlackAirFragment) getSupportFragmentManager().findFragmentByTag("BLACK_AIR_FRAGMENTS");
+        if(blackAirFragment != null && blackAirFragment.isVisible()){
+            fragmentTransaction.commit();
+        }else {
+            fragmentTransaction.setCustomAnimations(R.anim.exit_from_right, R.anim.exit_from_left);
+            fragmentTransaction.replace(R.id.nike2_placeholder, new BlackAirFragment(), "BLACK_AIR_FRAGMENTS");
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
     }
     public void ClickBackNike(View view) {
         Intent intent = new Intent(this, NikeActivity.class);

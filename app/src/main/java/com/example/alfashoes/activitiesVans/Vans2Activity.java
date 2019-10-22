@@ -27,6 +27,18 @@ public class Vans2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vans2);
         sepatu = findViewById(R.id.textView14);
+
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
+        BlackVMFragment blackVMFragment = (BlackVMFragment) getSupportFragmentManager().findFragmentByTag("BLACK_VM_FRAGMENTS");
+        if(blackVMFragment != null && blackVMFragment.isVisible()){
+            fragmentTransaction.commit();
+        }else {
+            fragmentTransaction.setCustomAnimations(R.anim.exit_from_right, R.anim.exit_from_left);
+            fragmentTransaction.replace(R.id.vans2_placeholder, new BlackVMFragment(), "BLACK_VM_FRAGMENTS");
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
     }
     public void ClickBackVans(View view) {
         Intent intent = new Intent(this, VansActivity.class);
